@@ -11,7 +11,7 @@ connectDB();
 const app = express();
 
 // Middleware to parse JSON bodies
-app.express.json();
+app.use(express.json());
 
 // Mount routes
 app.use('/api/users', require('./routes/userRoutes'));
